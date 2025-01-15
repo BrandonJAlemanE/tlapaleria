@@ -13,12 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="fill"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:onClick="RegistrarUsuario"
+            android:src="@drawable/icon_regreso"/>
 
         <ImageView
             android:layout_gravity="center"
@@ -91,6 +97,7 @@
             android:padding="10dp"
             android:layout_marginTop="32dp"
             android:textSize="27sp"
+            android:onClick="Home"
             android:id="@+id/Registrar_btn"
             />
 

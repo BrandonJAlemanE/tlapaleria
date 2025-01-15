@@ -1,6 +1,10 @@
 package com.example.tlapa;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,17 @@ public class Registrar extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    EditText mensajetext;
+
+    public void RegistrarUsuario(View registro){
+        Intent miIntent = new Intent(this, Registrar.class);
+    }
+    public void Home(View Home){
+        mensajetext = findViewById(R.id.nombre_input);
+        String mensajeS = mensajetext.getText().toString();
+        Toast.makeText(Registrar.this,"Bienvenido" + mensajeS, Toast.LENGTH_SHORT).show();
+        Intent miIntent = new Intent(this, Home.class);
     }
 }

@@ -27,4 +27,8 @@ public class MainActivity extends AppCompatActivity {
     public void RegistrarUsuario(View registro){
         Intent miIntent = new Intent(this, Registrar.class);
     }
+
+    public void Home(View Home){
+        Intent miIntent = new Intent(this, Home.class);
+    }
 }
